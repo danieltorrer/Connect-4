@@ -1,0 +1,6 @@
+{
+  "name": "Conecta 4",
+  "description": "Node, socket.io, DLV",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"]
+}

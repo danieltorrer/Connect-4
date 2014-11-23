@@ -1,0 +1,163 @@
+%tiro ganador vertical
+g(a):-casilla(X,Y,a),
+                casilla(X,Z,a), Y=Z+1,
+                casilla(X,W,a), Y=W+2,
+                casilla(X,R,a), Y=R+3.
+
+%HORIZONTALES
+
+%tiro ganador horizontal a la derecha
+g(a):-casilla(X,Y,a),
+                casilla(Z,Y,a), Z=X+1,
+                casilla(W,Y,a), W=X+2,
+                casilla(R,Y,a), R=X+3.
+
+%tiro ganador horizontal a la izquierda
+g(a):-casilla(X,Y,a),
+                casilla(Z,Y,a), X=Z+1,
+                casilla(W,Y,a), X=W+2,
+                casilla(R,Y,a), X=R+3.
+
+g(a):-casilla(X,Y,a),
+                casilla(Z,Y,a), X=Z+1,
+                casilla(W,Y,a), W=X+1,
+                casilla(R,Y,a), R=X+2.
+
+g(a):-casilla(X,Y,a),
+                casilla(Z,Y,a), X=Z+1,
+                casilla(W,Y,a), X=W+2,
+                casilla(R,Y,a), R=X+1.
+
+
+%DIAGONALES
+%tiro ganador diagonal a la izquierda  ascendente
+g(a):-casilla(X,Y,a),
+                casilla(Z,A,a), Z=X+1,  A=Y+1,
+                casilla(W,B,a), W=X+2,  B=Y+2,
+                casilla(R,C,a), R=X+3,  C=Y+3.
+
+
+%tiro ganador diagonal a la izquierda  descendente
+g(a):-casilla(X,Y,a),
+                casilla(Z,A,a), Z=X+1,  Y=A+1,
+                casilla(W,B,a), W=X+2,  Y=B+2,
+                casilla(R,C,a), R=X+3,  Y=C+3.
+
+
+
+%tiro ganador diagonal a la DERECHA
+g(a):-casilla(X,Y,a),
+                casilla(Z,A,a), X=Z+1,  Y=A+1,
+                casilla(W,B,a), X=W+2,  Y=B+2,
+                casilla(R,C,a), X=R+3,  Y=C+3.
+%tiro ganador diagonal a la dERECHA descendente
+g(a):-casilla(X,Y,a),
+                casilla(Z,A,a), X=Z+1,  A=Y+1,
+                casilla(W,B,a), X=W+2,  B=Y+2,
+                casilla(R,C,a), X=R+3,  C=Y+3.
+
+
+%tiro garador diagonal a la izquierda  hueco
+g(a):-casilla(X,Y,a),
+                casilla(Z,A,a), X=Z+1,  Y=A+1,
+                casilla(W,B,a), W=X+1,  B=Y+1,
+                casilla(R,C,a), R=X+2,  C=Y+2.
+
+g(a):-casilla(X,Y,a),
+                casilla(Z,A,a), X=Z+1,  Y=A+1,
+                casilla(W,B,a), X=W+2,  Y=B+2,
+                casilla(R,C,a), R=X+1,  C=Y+1.
+
+g(a):-casilla(X,Y,a),
+                casilla(Z,A,a), X=Z+1,  A=Y+1,
+                casilla(W,B,a), W=X+1,  Y=B+1,
+                casilla(R,C,a), R=X+2,  Y=C+2.
+
+g(a):-casilla(X,Y,a),
+                casilla(Z,A,a), X=Z+1,  A=Y+1,
+                casilla(W,B,a), X=W+2,  B=Y+2,
+                casilla(R,C,a), R=X+1,  Y=C+1.
+
+       
+
+%tiro ganador vertical
+g(r):-casilla(X,Y,r),
+                casilla(X,Z,r), Y=Z+1,
+                casilla(X,W,r), Y=W+2,
+                casilla(X,R,r), Y=R+3.
+
+%HORIZONTALES
+
+%tiro ganador horizontal a la derecha
+g(r):-casilla(X,Y,r),
+                casilla(Z,Y,r), Z=X+1,
+                casilla(W,Y,r), W=X+2,
+                casilla(R,Y,r), R=X+3.
+
+%tiro ganador horizontal a la izquierda
+g(r):-casilla(X,Y,r),
+                casilla(Z,Y,r), X=Z+1,
+                casilla(W,Y,r), X=W+2,
+                casilla(R,Y,r), X=R+3.
+
+g(r):-casilla(X,Y,r),
+                casilla(Z,Y,r), X=Z+1,
+                casilla(W,Y,r), W=X+1,
+                casilla(R,Y,r), R=X+2.
+
+g(r):-casilla(X,Y,r),
+                casilla(Z,Y,r), X=Z+1,
+                casilla(W,Y,r), X=W+2,
+                casilla(R,Y,r), R=X+1.
+
+
+%DIAGONALES
+%tiro ganador diagonal a la izquierda  ascendente
+g(r):-casilla(X,Y,r),
+                casilla(Z,A,r), Z=X+1,  A=Y+1,
+                casilla(W,B,r), W=X+2,  B=Y+2,
+                casilla(R,C,r), R=X+3,  C=Y+3.
+
+
+%tiro ganador diagonal a la izquierda  descendente
+g(r):-casilla(X,Y,r),
+                casilla(Z,A,r), Z=X+1,  Y=A+1,
+                casilla(W,B,r), W=X+2,  Y=B+2,
+                casilla(R,C,r), R=X+3,  Y=C+3.
+
+
+
+%tiro ganador diagonal a la DERECHA
+g(r):-casilla(X,Y,r),
+                casilla(Z,A,r), X=Z+1,  Y=A+1,
+                casilla(W,B,r), X=W+2,  Y=B+2,
+                casilla(R,C,r), X=R+3,  Y=C+3.
+%tiro ganador diagonal a la dERECHA descendente
+g(r):-casilla(X,Y,r),
+                casilla(Z,A,r), X=Z+1,  A=Y+1,
+                casilla(W,B,r), X=W+2,  B=Y+2,
+                casilla(R,C,r), X=R+3,  C=Y+3.
+
+
+%tiro garador diagonal a la izquierda  hueco
+g(r):-casilla(X,Y,r),
+                casilla(Z,A,r), X=Z+1,  Y=A+1,
+                casilla(W,B,r), W=X+1,  B=Y+1,
+                casilla(R,C,r), R=X+2,  C=Y+2.
+
+g(r):-casilla(X,Y,r),
+                casilla(Z,A,r), X=Z+1,  Y=A+1,
+                casilla(W,B,r), X=W+2,  Y=B+2,
+                casilla(R,C,r), R=X+1,  C=Y+1.
+
+g(r):-casilla(X,Y,r),
+                casilla(Z,A,r), X=Z+1,  A=Y+1,
+                casilla(W,B,r), W=X+1,  Y=B+1,
+                casilla(R,C,r), R=X+2,  Y=C+2.
+
+g(r):-casilla(X,Y,r),
+                casilla(Z,A,r), X=Z+1,  A=Y+1,
+                casilla(W,B,r), X=W+2,  B=Y+2,
+                casilla(R,C,r), R=X+1,  Y=C+1.
+
+       

@@ -1,0 +1,24 @@
+{
+  "name": "Conecta",
+  "version": "0.0.1",
+  "description": "Conecta 4",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "~3.4.4",
+    "jade": "^1.7.0",
+    "socket.io": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@heroku.com:stormy-crag-4505.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}

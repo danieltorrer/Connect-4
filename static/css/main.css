@@ -1,0 +1,99 @@
+body{
+	background: #56B1BF;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+h1,h2,h3,h4,h5,h6,p,a{
+	font-family: 'Lato', sans-serif;
+}
+
+.ficha{
+	border-radius: 50px;
+	border: dotted;
+	height: 50px;
+	width: 50px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.ficha.no-turn{
+	background: rgba(255,255,255,0.6);
+}
+
+.user-1 .ficha:hover{
+	border-color: #e74c3c;
+	padding: 15px !important;
+	background: #e67e22;
+	cursor: pointer;
+}
+
+.user-2 .ficha:hover{
+	border-color: #2980b9;
+	padding: 15px !important;
+	background: #2ecc71;
+	cursor: pointer;
+}
+
+.movimiento-1{
+	border-color: #e74c3c !important;
+	background: #e67e22 !important;
+}
+
+.movimiento-2{
+	border-color: #2980b9 !important;
+	background: #2ecc71 !important;
+}
+
+.conecta{
+	padding-top: 30px;
+	background: #FFE653;
+}
+
+.grid{
+	height: 70px;
+	width: 100%;
+	border: solid 1px black;
+	margin-bottom: 15px;
+	background: #332820;
+}
+
+.panel{
+	background: white;
+}
+
+button,
+a.button{
+	margin-top: 15px;
+	background: #ED5D5B;
+}
+
+a.button:hover,
+button:hover{
+	background: #B04543;
+}
+
+.turno.hide{
+	visibility: hidden;
+}
+
+.float{
+	z-index: 10000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.5);
+}
+
+.content{
+	margin: 0 auto;
+	padding: 20px;
+	background: white;
+	margin-top: 50px;
+}
