@@ -215,7 +215,7 @@ var lectura = fs.createReadStream('jugadas.txt');
 					var casilla = {};
 					var jugada = "";
 					//console.log(ficha)
-					if (fichas[ficha].length < 5) {
+					if (fichas[ficha].length < 6) {
 						casilla.col = ficha + 1
 						casilla.fila = fichas[ficha].push(1);
 						casilla.user = turnoUsuario+1;
