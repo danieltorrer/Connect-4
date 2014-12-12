@@ -12,11 +12,15 @@ h1,h2,h3,h4,h5,h6,p,a{
 	font-family: 'Lato', sans-serif;
 }
 
+.main{
+	padding-top: 30px;
+}
+
 .ficha{
-	border-radius: 50px;
+	border-radius: 40px;
 	border: dotted;
-	height: 50px;
-	width: 50px;
+	height: 40px;
+	width: 40px;
 	margin: 0 auto;
 	margin-bottom: 30px;
 }
@@ -29,6 +33,20 @@ h1,h2,h3,h4,h5,h6,p,a{
 	border-color: #e74c3c;
 	padding: 15px !important;
 	background: #e67e22;
+	cursor: pointer;
+}
+
+.user-1 .ficha.simulate-hover{
+	border-color: #e74c3c;
+	padding: 15px !important;
+	background: #e67e22;
+	cursor: pointer;
+}
+
+.user-2 .ficha.simulate-hover{
+	border-color: #2980b9;
+	padding: 15px !important;
+	background: #2ecc71;
 	cursor: pointer;
 }
 
@@ -52,22 +70,33 @@ h1,h2,h3,h4,h5,h6,p,a{
 .conecta{
 	padding-top: 30px;
 	background: #FFE653;
+	//max-width: 37em;
 }
 
 .grid{
-	height: 70px;
-	width: 100%;
-	border: solid 1px black;
-	margin-bottom: 15px;
-	background: #332820;
+	height: 50px;
+	width: 50px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.grid>.slot{
+	margin: 0 auto;
+	border-radius: 50px;
+	background: #56B1BF;
+	height: 45px;
+	width: 45px;
+	margin-top: 5px;
 }
 
 .panel{
+	min-height: 490px;
 	background: white;
+	//max-width: 37em;
 }
 
-button,
-a.button{
+button.start,
+a.button.start{
 	margin-top: 15px;
 	background: #ED5D5B;
 }

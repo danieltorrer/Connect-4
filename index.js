@@ -73,6 +73,8 @@ var lectura = fs.createReadStream('jugadas.txt');
 	 	self.app.use(self.app.router);
 	 	self.app.use(express.static(path.join(__dirname, 'static')));
 
+	 	//detect OS
+	 	self.os = process.platform
 	 	if ('development' == self.app.get('env')) {
 	 		self.app.use(express.errorHandler());
 	 		console.log("env");
@@ -122,37 +124,40 @@ var lectura = fs.createReadStream('jugadas.txt');
 	};
 
 	self.runDLV = function(){
+		if (self.os == 'linux')
+			execF.exec('./dlv.bin win.dlv jugadas.txt -N=6 -nofacts -silent', dlvResult);
+		else{
+			if (self.os == "win32") 
+				execF.exec('dlv.exe win.dlv jugadas.txt -N=6 -nofacts -silent', dlvResult);
+		}
+		
+	};	
 
-		execF.exec('./dlv.bin win.dlv jugadas.txt -N=6 -nofacts -silent', function(err, data){
-			if (err) {
-				console.log(err);
+	function dlvResult(err, data){
+		if (err) {
+			console.log(err);
+		}
+
+		//ver si ganó
+		else{
+			ganador = data.trim();
+			
+			switch(ganador){
+				case '{g(a)}':
+				self.io.to(users[1].id_).emit('resultado', {resultado : 'Ganaste'});
+				self.io.to(users[0].id_).emit('resultado', {resultado : 'Perdiste'});
+				break;
+
+				case '{g(r)}':
+				self.io.to(users[0].id_).emit('resultado', {resultado : 'Ganaste'});
+				self.io.to(users[1].id_).emit('resultado', {resultado : 'Perdiste'});
+				break;
+
+				default:
+				break;
 			}
-			//ver si ganó
-			else{
-				ganador = data.trim();
-				//console.log(ganador);
-				switch(ganador){
-					case '{g(a)}':
-						//console.log('gana verde');
-						self.io.to(users[1].id_).emit('resultado', {resultado : 'Ganaste'});
-						self.io.to(users[0].id_).emit('resultado', {resultado : 'Perdiste'});
-					break;
-					
-					case '{g(r)}':
-						//console.log('gana naranja');
-						self.io.to(users[0].id_).emit('resultado', {resultado : 'Ganaste'});
-						self.io.to(users[1].id_).emit('resultado', {resultado : 'Perdiste'});
-						//avisar naranja
-					break;
-
-					default:
-						//console.log('juego continua');
-					break;
-				}
-			}
-		})
-	};
-
+		}
+	}
 
 	self.addSocketIOEvents = function() {
 
@@ -244,7 +249,7 @@ var lectura = fs.createReadStream('jugadas.txt');
 				self.io.emit('pintar',{col: 0, fila: 0, usuario: 0});
 			});
 
-		});
+});
 
 
 };

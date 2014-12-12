@@ -4,135 +4,182 @@ html
         meta(charset='utf-8')
         title Conecta 4
         link(rel='stylesheet', href='css/normalize.css')
-        link(rel='stylesheet', href='css/foundation.css')
+        link(rel='stylesheet', href='css/foundation.min.css')
         link(rel='stylesheet', href='css/main.css')
         link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:300,400')
     body
 
         .float.hide
             .row
-                .content
-                    h2
-                    a(href="").expand.button Jugar de nuevo
+                .large-12
+                    .content
+                        h2
+                        a(href="").expand.button Jugar de nuevo
+        
+        .row.main
+            .large-8.columns.small-12
+                .row.conecta
+                    .large-2.small-2.columns
+                        div(data-ficha= '0').ficha
+                    .large-2.small-2.columns
+                        div(data-ficha= '1').ficha
+                    .large-2.small-2.columns
+                        div(data-ficha= '2').ficha
+                    .large-2.small-2.columns
+                        div(data-ficha= '3').ficha
+                    .large-2.small-2.columns
+                        div(data-ficha= '4').ficha
+                    .large-2.small-2.columns
+                        div(data-ficha= '5').ficha
 
-        .row
-            .large-12.columns
-                h1.text-center Conecta 4
+                    .espacios
+                        .large-2.small-2.columns
+                            .grid.fila-6.col-1(data-ficha= '0')
+                                .slot                
+                        .large-2.small-2.columns
+                            .grid.fila-6.col-2(data-ficha= '1')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-6.col-3(data-ficha= '2')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-6.col-4(data-ficha= '3')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-6.col-5(data-ficha= '4')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-6.col-6(data-ficha= '5')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-5.col-1(data-ficha= '0')
+                                .slot                
+                        .large-2.small-2.columns
+                            .grid.fila-5.col-2(data-ficha= '1')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-5.col-3(data-ficha= '2')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-5.col-4(data-ficha= '3')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-5.col-5(data-ficha= '4')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-5.col-6(data-ficha= '5')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-4.col-1(data-ficha= '0')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-4.col-2(data-ficha= '1')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-4.col-3(data-ficha= '2')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-4.col-4(data-ficha= '3')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-4.col-5(data-ficha= '4')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-4.col-6(data-ficha= '5')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-3.col-1(data-ficha= '0')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-3.col-2(data-ficha= '1')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-3.col-3(data-ficha= '2')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-3.col-4(data-ficha= '3')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-3.col-5(data-ficha= '4')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-3.col-6(data-ficha= '5')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-2.col-1(data-ficha= '0')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-2.col-2(data-ficha= '1')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-2.col-3(data-ficha= '2')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-2.col-4(data-ficha= '3')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-2.col-5(data-ficha= '4')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-2.col-6(data-ficha= '5')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-1.col-1(data-ficha= '0')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-1.col-2(data-ficha= '1')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-1.col-3(data-ficha= '2')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-1.col-4(data-ficha= '3')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-1.col-5(data-ficha= '4')
+                                .slot
+                        .large-2.small-2.columns
+                            .grid.fila-1.col-6(data-ficha= '5')
+                                .slot
                 
-        
-        .row.conecta
-            .large-2.small-2.columns
-                div(data-ficha= '0').ficha
-            .large-2.small-2.columns
-                div(data-ficha= '1').ficha
-            .large-2.small-2.columns
-                div(data-ficha= '2').ficha
-            .large-2.small-2.columns
-                div(data-ficha= '3').ficha
-            .large-2.small-2.columns
-                div(data-ficha= '4').ficha
-            .large-2.small-2.columns
-                div(data-ficha= '5').ficha
+            .large-4.columns.small-12
+                .row.panel
+                    .large-12.columns
+                        h1.text-center Conecta 4
+                        h4.subheader
+                        button.hide.start.expand Iniciar
+                        h5.subheader.turno.hide Tu turno
+                        h5.subheader.espera.hide Espera tu turno
+                        h6.mensajes
+                    .large-12.columns.chat
+                        .mensajes
 
-            .espacios
-                .large-2.small-2.columns
-                    .grid.fila-6.col-1                
-                .large-2.small-2.columns
-                    .grid.fila-6.col-2
-                .large-2.small-2.columns
-                    .grid.fila-6.col-3
-                .large-2.small-2.columns
-                    .grid.fila-6.col-4
-                .large-2.small-2.columns
-                    .grid.fila-6.col-5
-                .large-2.small-2.columns
-                    .grid.fila-6.col-6
-                .large-2.small-2.columns
-                    .grid.fila-5.col-1                
-                .large-2.small-2.columns
-                    .grid.fila-5.col-2
-                .large-2.small-2.columns
-                    .grid.fila-5.col-3
-                .large-2.small-2.columns
-                    .grid.fila-5.col-4
-                .large-2.small-2.columns
-                    .grid.fila-5.col-5
-                .large-2.small-2.columns
-                    .grid.fila-5.col-6
-                .large-2.small-2.columns
-                    .grid.fila-4.col-1
-                .large-2.small-2.columns
-                    .grid.fila-4.col-2
-                .large-2.small-2.columns
-                    .grid.fila-4.col-3
-                .large-2.small-2.columns
-                    .grid.fila-4.col-4
-                .large-2.small-2.columns
-                    .grid.fila-4.col-5
-                .large-2.small-2.columns
-                    .grid.fila-4.col-6
-                .large-2.small-2.columns
-                    .grid.fila-3.col-1
-                .large-2.small-2.columns
-                    .grid.fila-3.col-2
-                .large-2.small-2.columns
-                    .grid.fila-3.col-3
-                .large-2.small-2.columns
-                    .grid.fila-3.col-4
-                .large-2.small-2.columns
-                    .grid.fila-3.col-5
-                .large-2.small-2.columns
-                    .grid.fila-3.col-6
-                .large-2.small-2.columns
-                    .grid.fila-2.col-1
-                .large-2.small-2.columns
-                    .grid.fila-2.col-2
-                .large-2.small-2.columns
-                    .grid.fila-2.col-3
-                .large-2.small-2.columns
-                    .grid.fila-2.col-4
-                .large-2.small-2.columns
-                    .grid.fila-2.col-5
-                .large-2.small-2.columns
-                    .grid.fila-2.col-6
-                .large-2.small-2.columns
-                    .grid.fila-1.col-1
-                .large-2.small-2.columns
-                    .grid.fila-1.col-2
-                .large-2.small-2.columns
-                    .grid.fila-1.col-3
-                .large-2.small-2.columns
-                    .grid.fila-1.col-4
-                .large-2.small-2.columns
-                    .grid.fila-1.col-5
-                .large-2.small-2.columns
-                    .grid.fila-1.col-6
-        
-        .row.panel.usuario
-            .large-8.small-8.columns
-                button.hide.start.expand Iniciar
-            .large-4.small-4.columns
-                h3.text-right
-                h5.text-right.subheader.turno.hide Tu turno
-                h5.text-right.subheader.espera.hide Espera tu turno
-                h6.text-right.mensajes
+                        //.row
+                        //    .large-12.columns
+                        //        .row.collapse
+                        //            .small-10.columns
+                        //                input(type="text")
+                        //            .small-2.columns
+                        //                a.button.postfix enviar
 
         script(src='/socket.io/socket.io.js')
         script(src='js/vendor/jquery.js')
+        script(src='js/vendor/fastclick.js')
         script(type='text/javascript').
             var playing = false
             $(document).ready(function(){
+                FastClick.attach('.ficha')
                 var socket = io()
                 
 
                 socket.on('hi', function(user){
-                    $('.usuario h3').html(user.user)
+                    $('.panel h4').html(user.user)
                     //limpiar clases
                     $('.conecta').removeClass('user-1')
                     $('.conecta').removeClass('user-2')
                     $('.conecta').addClass(user.clase)
-                    $('.grid').removeClass('movimiento-1')
-                    $('.grid').removeClass('movimiento-2')
+                    $('.slot').removeClass('movimiento-1')
+                    $('.slot').removeClass('movimiento-2')
                     //
                     $('.turno').addClass('hide')
                     $('.espera').addClass('hide')
@@ -140,9 +187,9 @@ html
                 })
 
                 socket.on('clean', function(){
-                    
-                    $('.grid').removeClass('movimiento-1')
-                    $('.grid').removeClass('movimiento-2')
+                    $('.slot').removeClass('movimiento-1')
+                    $('.slot').removeClass('movimiento-2')
+                    $('.turno').addClass('hide')
                 })
 
                 socket.on('bye', function(user){
@@ -152,6 +199,7 @@ html
 
                 socket.on('start', function(){
                     $('.start').removeClass('hide')
+                    $('.mensajes').html('')
                 })
 
                 socket.on('tu turno', function(){
@@ -167,11 +215,11 @@ html
 
                 socket.on('movimiento', function(casilla){
                     //pintar casilla
-                    $('.fila-'+casilla.fila+'.col-'+casilla.col).addClass('movimiento-'+casilla.user)
+                    $('.fila-'+casilla.fila+'.col-'+casilla.col + ' div.slot').addClass('movimiento-'+casilla.user)
                 })
 
                 socket.on('resultado', function(end){
-                    $('.float h2').html(end.resultado)
+                    $('.float').find('h2').html(end.resultado)
                     $('.float').removeClass('hide')
                 })
 
@@ -189,8 +237,22 @@ html
                         socket.emit('movimiento',  numFicha)
                     }
                 })
+                
+                $('.grid').click(function(){
+                    if(playing){
+                        var numFicha = $(this).data('ficha')
+                        //console.log(numFicha)
+                        socket.emit('movimiento',  numFicha)
+                    }
+                })
 
+                $('.grid').mouseenter(function(){
+                    var numFicha = $(this).data('ficha')
+                    $(".ficha").removeClass("simulate-hover")
+                    $(".ficha[data-ficha='"+ numFicha +"']").addClass("simulate-hover")
+                })
 
+                $('.grid').mouseleave(function(){
+                    $(".ficha").removeClass("simulate-hover")
+                })
             })
-            
-

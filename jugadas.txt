@@ -1,3 +1,3 @@
 casilla(1,1,r).
-casilla(6,1,a).
-casilla(2,1,r).
+casilla(2,1,a).
+casilla(2,2,r).
