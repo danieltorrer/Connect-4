@@ -1,7 +1,7 @@
 Connect 4
 ==========
 
-![Imgur](http://i.imgur.com/YstzI0h.gifv)
+![Imgur](http://i.imgur.com/YstzI0h.gif)
 
 Conecta 4 recrea el clásico juego de mesa de los 80's con un modo multijugador. Esta implementado en Node.js y funciona en tiempo real utilizando Socket.io. Para la parte de la lógica se utilizó DLV que es un lenguaje para lógicas disyuntivas. Este es un pequeño experimento el cual seguramente necesita varios ajustes.
 
