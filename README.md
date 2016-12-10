@@ -1,36 +1,52 @@
-# node-js-getting-started
+Connect 4
+==========
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+![Imgur](http://i.imgur.com/YstzI0h.gifv)
 
-This application support the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+Conecta 4 recrea el clásico juego de mesa de los 80's con un modo multijugador. Esta implementado en Node.js y funciona en tiempo real utilizando Socket.io. Para la parte de la lógica se utilizó DLV que es un lenguaje para lógicas disyuntivas. Este es un pequeño experimento el cual seguramente necesita varios ajustes.
 
-## Running Locally
+### Versión
+0.7
+[Live] 
 
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
+### Tecnologías
+
+Proyectos open source que le dieron vida a este pequeño experimento
+
+* [Foundation] - Framework UI para aplicaciones web modernas.
+* [Jade] - Lenguaje de template para Node.js.
+* [Express] - Framework de Node.js rápido y sencillo.
+* [node.js] - backend basado en eventos I/O.
+* [DLV] - Sistema de inteligencia artificial basado en lógica disyuntiva.
+* [jQuery] - duh.
+
+### Instalación
+
+Solo clona el repositorio. (Funciona solo en sistemas GNU/Linux) 
 
 ```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
+$ git clone 
+```
+E instala las dependencias
+```sh
 $ npm install
-$ npm start
 ```
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+### Funcionamiento
 
-## Deploying to Heroku
+Este juego requiere que dos jugadores se conecten para poder iniciar el juego. Cada usuario tiene un tiro por turno.
 
-```
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
+### To do
+- Salas  manejar múltiples usuarios.
+- Mejorar IU.
+- Programar situación de empate
+- Mejorar rendimiento en dispositivos móviles
 
-## Documentation
-
-For more information about using Node.js on Heroku, see these Dev Center articles:
-
-- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+[Foundation]:http://foundation.zurb.com/
+[node.js]:http://nodejs.org
+[jQuery]:http://jquery.com
+[express]:http://expressjs.com
+[DLV]:http://www.dlvsystem.com/
+[Jade]:http://jade-lang.com/
+[Live]: http://pacific-eyrie-9152.herokuapp.com
+0
